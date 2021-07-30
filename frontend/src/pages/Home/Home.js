@@ -8,7 +8,7 @@ import Button from "../../components/shared/Button/Button";
 function Home(){
     const history=useHistory();
     function startRegister(){
-        history.push('/register')
+        history.push('/authenticate')
     }
     return(
             <div  className={homeStyles.cardWrapper}>
@@ -22,14 +22,14 @@ function Home(){
                     </p>
                     <div>
                         <Button
-                                text="Get your username"
+                                text="Let's Go"
                                 icon="arrow-forward"
                                 onClick={startRegister}
                         />
                     </div>
                     <div className={homeStyles.signinWrapper}>
                         <span className={homeStyles.hasInvite}>Have an invite text?</span>
-                        <Link to="/login" style={styles.loginLink}>sign in</Link>
+                        
                     </div>
                     
                 </Card>

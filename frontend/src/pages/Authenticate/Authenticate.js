@@ -1,21 +1,16 @@
 import React, { useState } from "react";
-import registerStyles from './Register.module.css'
+import loginStyles from './Authenticate.module.css'
 import StepPhoneEmail from "../Steps/StepPhoneEmail/StepPhoneEmail";
-import StepUsername from "../Steps/StepUsername/StepUsername";
 import StepOtp from "../Steps/StepOtp/StepOtp";
-import StepAvatar from "../Steps/StepAvatar/StepAvatar";
-import StepName from "../Steps/StepName/StepName";
+
 
 const steps={
   1:StepPhoneEmail,
   2:StepOtp,
-  3:StepName,
-  4:StepAvatar,
-  5:StepUsername
 }
 
 
-function Register() {
+function Authenticate() {
   const [step,setStep]=useState(1);
   const Step=steps[step];
 
@@ -33,4 +28,4 @@ function Register() {
 }
 
 
-export default Register;
+export default Authenticate;
