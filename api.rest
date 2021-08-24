@@ -1,0 +1,18 @@
+POST http://localhost:8000/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone":"+916392404642"
+}
+
+
+###
+POST http://localhost:8000/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone":"+916392404642",
+    "otp":7038,
+    "hash":"06b69238eeee7ce5e6687f38f8dbde8cd425cceedc2cbc4f71d93b27ec2bc617.1629801559867"
+}
+
